@@ -1,0 +1,12 @@
+{
+  "storage": {
+    "canonical": "plain-markdown",
+    "_note": "NEUTRAL BY DEFAULT. All data lives as plain .md / .json files inside this plugin folder (knowledge/philosophers/, journal/, config/). No Obsidian, no database, no account, no external app is required. This works on any machine, offline, and is the recommended default."
+  },
+  "mirrors": [],
+  "_mirrors_help": "OPTIONAL. Mirror your data into a tool you already use, so it shows up there too. Leave [] for a fully self-contained setup. Each mirror = { type, target, sync: [\"knowledge\"|\"journal\"|\"goals\"] }. Supported type: 'obsidian' (requires the Obsidian MCP). The plugin folder always stays the source of truth; mirrors are one-way copies.",
+  "_mirror_examples": [
+    { "type": "obsidian", "target": "World Wisdom",   "sync": ["knowledge", "goals"] },
+    { "type": "obsidian", "target": "Growth Journal", "sync": ["journal"] }
+  ]
+}

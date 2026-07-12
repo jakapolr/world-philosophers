@@ -1,0 +1,20 @@
+# Personal growth-journal entries are private — never commit them to a public repo.
+# Keep only the README and the founding example entry.
+journal/*
+!journal/README.md
+!journal/*.example.md
+
+# Your personal profile stays local — copy config/user-profile.example.md to start
+config/user-profile.md
+*.local.md
+
+# Local, machine-specific Claude Code settings
+.claude/settings.local.json
+
+# Wrangler / Cloudflare local cache
+.wrangler/
+
+# OS / editor noise
+.DS_Store
+*.swp
+.obsidian/

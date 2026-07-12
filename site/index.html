@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>World Philosophers — A council of 23 mentors. Reflection, never fortune-telling.</title>
+<meta name="description" content="A personal mentorship plugin: 23 world-leading minds from Eastern and Western traditions. It routes your question to the best-suited mentors, shows where they disagree, and always hands the choice back to you." />
+<meta property="og:title" content="World Philosophers — Personal Mentorship" />
+<meta property="og:description" content="A council of 23 mentors for life, business, strategy, money, and meaning. Reflection, never fortune-telling. A small candle in the dark." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500&family=Noto+Serif+Thai:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<!-- Atmosphere layers (decorative, pointer-events:none) -->
+<canvas class="embers" id="embers" aria-hidden="true"></canvas>
+<div class="torch" id="torch" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+<div class="scroll-progress" id="progress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a class="brand" href="#top" data-nav><span class="flame-dot">🕯️</span> World Philosophers</a>
+  <div class="nav-links">
+    <a href="#how" data-nav>How it works</a>
+    <a href="#methodology" data-nav>Method</a>
+    <a href="#council" data-nav>The Council</a>
+    <a href="#charter" data-nav>Free-Will Charter</a>
+    <a class="btn btn-ghost magnetic" href="https://github.com/jakapolr/world-philosophers" target="_blank" rel="noopener">GitHub</a>
+    <button class="icon-btn" id="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="candle" aria-hidden="true"><div class="flame"></div></div>
+    <p class="eyebrow" data-reveal>Personal mentorship · 23 mentors · Eastern &amp; Western</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="l-inner">The council you've been</span></span>
+      <span class="line"><span class="l-inner"><span class="accent">building</span> in your head.</span></span>
+    </h1>
+    <p class="lede" data-reveal style="margin:1.2rem auto 0;">Ask a real question. It convenes the philosophers, strategists, founders, and investors best suited to it — shows you where they <em>disagree</em> — and always hands the choice back to you.</p>
+    <p class="mantra" data-reveal>“Reflection, never fortune-telling.”</p>
+    <div class="hero-cta" data-reveal>
+      <a class="btn btn-primary magnetic" href="#council">🏛️ Meet the council</a>
+      <a class="btn btn-ghost magnetic" href="#how">See how it works</a>
+    </div>
+    <div class="hero-stats" data-reveal>
+      <div><b data-count="23">0</b> mentors</div>
+      <div><b data-count="6">0</b> wisdom domains</div>
+      <div><b data-count="4">0</b> commands</div>
+      <div><b>∞</b> your free will</div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</header>
+
+<!-- CHARTER STRIP -->
+<section class="section charter-strip">
+  <div class="wrap">
+    <p class="big serif-quote" data-reveal>It does not tell your fortune.<br>It helps you <em>hear your own mind</em> — then you choose the step.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>How it works</p>
+    <h2 data-reveal>Four moves, one companion.</h2>
+    <p class="lede" data-reveal>From discovering what you actually want, to deciding, to seeing how you've grown.</p>
+    <div class="steps">
+      <div class="step" data-reveal data-tilt><span class="cmd">/build-goals</span><h3>Discover your WHY</h3><p>Simon Sinek, Aristotle, the Buddha and others ask you questions until your Ultimate Goals are your own words — not a form you filled in.</p></div>
+      <div class="step" data-reveal data-tilt><span class="cmd">/mentor</span><h3>Ask for guidance</h3><p>Your question is routed to the best-suited mentor automatically — or name one: <em>“as Marcus Aurelius…”</em></p></div>
+      <div class="step" data-reveal data-tilt><span class="cmd">/council</span><h3>Convene a council</h3><p>2–4 mentors across traditions weigh in, and the plugin shows exactly where they <em>disagree</em>. The tension is the value.</p></div>
+      <div class="step" data-reveal data-tilt><span class="cmd">/reflect</span><h3>See how you've grown</h3><p>It remembers your journey and mirrors your change back over time — grounded in real entries, never flattering.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="section" id="methodology">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Our Coaching Methodology</p>
+    <h2 data-reveal>It doesn't hand you answers.<br>It draws out your own.</h2>
+    <p class="lede" data-reveal>Beneath every mentor's voice runs one method: <em>ask before you tell.</em> You already carry the answer — their work is to reflect it back, sharpen it, and return the choice to you. The wisdom is the <em>what</em>; the coaching is the <em>how</em>.</p>
+
+    <div class="method-flow" data-reveal>
+      <span class="method-step">Reflect the real question</span>
+      <span class="method-arrow">→</span>
+      <span class="method-step">Ask before advising</span>
+      <span class="method-arrow">→</span>
+      <span class="method-step">Scale &amp; reframe</span>
+      <span class="method-arrow">→</span>
+      <span class="method-step">Hand the choice back</span>
+    </div>
+
+    <div class="steps" style="margin-top:2.4rem;">
+      <div class="step" data-reveal data-tilt><h3>Powerful questions</h3><p>Open and Socratic, never leading — the default move of every mentor.</p></div>
+      <div class="step" data-reveal data-tilt><h3>Scaling · 0–10</h3><p>"Where is this on a 1–10? What would move it up one point?" A feeling becomes a next step.</p></div>
+      <div class="step" data-reveal data-tilt><h3>Reflect &amp; reframe</h3><p>Mirror the real question; reframe the <em>situation</em> — never the person.</p></div>
+      <div class="step" data-reveal data-tilt><h3>GROW · Wheel of Life · WOOP</h3><p>Light structures for decisions and goals, used where they fit — never forced.</p></div>
+    </div>
+
+    <div class="boundary-note" data-reveal>
+      <h3>⚖️ Coaching — not therapy</h3>
+      <p>World Philosophers is for goals, decisions, strategy, and reflection. It is <strong>not</strong> therapy or mental-health treatment. When a question touches trauma, depression, grief, or crisis, the mentors step back with care and point you toward qualified human support — they never play amateur therapist. That boundary is written into the plugin, and it is non-negotiable.</p>
+    </div>
+
+    <p class="method-voice serif-quote" data-reveal>The coaching is an invisible scaffold. Each mentor still speaks entirely in their own voice — Munger stays blunt, the Buddha stays diagnostic. The method shapes the conversation; the soul stays theirs.</p>
+  </div>
+</section>
+
+<!-- VOICES -->
+<section class="section voices" id="voices">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>In their own words</p>
+    <blockquote class="voice-quote" id="voice-quote" tabindex="0" aria-label="Rotating quotes from the mentors">
+      <p class="voice-text" id="voice-text">—</p>
+      <cite class="voice-cite" id="voice-cite"></cite>
+    </blockquote>
+    <div class="voice-dots" id="voice-dots" role="tablist" aria-label="Choose a voice"></div>
+  </div>
+</section>
+
+<!-- COUNCIL -->
+<section class="section council-section" id="council">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>The Council</p>
+    <h2 data-reveal>23 minds, six domains.</h2>
+    <p class="lede" data-reveal>Filter by what you're facing. Each mentor carries their biography, successes, honest failures, and wisdom.</p>
+
+    <div class="filters" id="filters" role="group" aria-label="Filter mentors by domain">
+      <button class="chip" data-domain="all" aria-pressed="true">All <span class="count" id="count"></span></button>
+      <button class="chip" data-domain="Life &amp; Character" aria-pressed="false">Life &amp; Character</button>
+      <button class="chip" data-domain="Business &amp; Leadership" aria-pressed="false">Business &amp; Leadership</button>
+      <button class="chip" data-domain="Strategy &amp; Competition" aria-pressed="false">Strategy &amp; Competition</button>
+      <button class="chip" data-domain="Financial &amp; Investing" aria-pressed="false">Financial &amp; Investing</button>
+      <button class="chip" data-domain="Intuition &amp; Inner-Self" aria-pressed="false">Intuition &amp; Inner-Self</button>
+      <button class="chip" data-domain="Purpose &amp; Longevity" aria-pressed="false">Purpose &amp; Longevity</button>
+    </div>
+
+    <div class="grid" id="mentor-grid" aria-live="polite"></div>
+    <p class="empty" id="empty" hidden>No mentors in that domain.</p>
+  </div>
+</section>
+
+<!-- CHARTER -->
+<section class="section" id="charter">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>The Free-Will Charter</p>
+    <h2 data-reveal>The spine of the whole thing.</h2>
+    <p class="lede" data-reveal>Every mentor obeys these. It's what makes this mentorship, not divination.</p>
+    <div class="charter-grid">
+      <div class="principle" data-reveal><h3>Reflection, never fortune-telling</h3><p>No predictions, no reading of fate. It illuminates the terrain; it never claims to know your future.</p></div>
+      <div class="principle" data-reveal><h3>The decision is always yours</h3><p>Each mentor ends by handing the choice back — never by issuing an order.</p></div>
+      <div class="principle" data-reveal><h3>Principle before prescription</h3><p>Advice is grounded in a named principle from real work, with its source. No invented quotes.</p></div>
+      <div class="principle" data-reveal><h3>Hold the tension</h3><p>When mentors disagree, the council shows the disagreement rather than averaging it into mush.</p></div>
+      <div class="principle" data-reveal><h3>Serve you, don't flatter</h3><p>A good mentor tells you what you need to hear — kindly, and firmly.</p></div>
+      <div class="principle" data-reveal><h3>Honest about limits</h3><p>Each mentor's failures and blind spots are recorded, and may be named. We learn from where they fell short.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p class="mantra" data-reveal>🕯️ May this be a small candle in the dark, for whoever is sinking — as I once was.</p>
+  <p class="sub">Open-source under MIT. Reflection, never fortune-telling. Built to help you choose for yourself.</p>
+  <div class="links">
+    <a href="https://github.com/jakapolr/world-philosophers" target="_blank" rel="noopener">GitHub</a>
+    <a href="#top">Back to top</a>
+    <a href="#council">The Council</a>
+  </div>
+  <p class="sub" style="margin-top:1.4rem;font-family:var(--font-voice);font-style:italic;">The mentors light the path. You choose the step.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

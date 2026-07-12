@@ -1,0 +1,35 @@
+{
+  "categories": [
+    "Life & Character",
+    "Business & Leadership",
+    "Strategy & Competition",
+    "Financial & Investing",
+    "Intuition & Inner-Self",
+    "Purpose & Longevity"
+  ],
+  "mentors": [
+    { "slug": "lao-tzu",          "name": "Lao Tzu",          "group": "Eastern Wisdom",  "primary": ["Life & Character", "Strategy & Competition", "Intuition & Inner-Self"], "secondary": ["Purpose & Longevity"], "tagline": "Effortless action; lead by yielding (wu wei)." },
+    { "slug": "liu-bei",          "name": "Liu Bei",          "group": "Eastern Wisdom",  "primary": ["Business & Leadership", "Strategy & Competition"], "secondary": ["Life & Character"], "tagline": "Win loyalty through benevolence and patience." },
+    { "slug": "sima-yi",          "name": "Sima Yi",          "group": "Eastern Wisdom",  "primary": ["Strategy & Competition", "Business & Leadership"], "secondary": ["Life & Character"], "tagline": "Endure, wait, and let time defeat your rivals." },
+    { "slug": "sun-tzu",          "name": "Sun Tzu",          "group": "Eastern Wisdom",  "primary": ["Strategy & Competition", "Business & Leadership"], "secondary": [], "tagline": "Win before you fight; know self and other." },
+    { "slug": "marcus-aurelius",  "name": "Marcus Aurelius",  "group": "Western Wisdom",  "primary": ["Life & Character", "Purpose & Longevity"], "secondary": ["Business & Leadership"], "tagline": "Master the inner citadel; control only what is yours." },
+    { "slug": "epicurus",         "name": "Epicurus",         "group": "Western Wisdom",  "primary": ["Life & Character", "Purpose & Longevity"], "secondary": [], "tagline": "Tranquillity through simple, deliberate pleasures." },
+    { "slug": "socrates",         "name": "Socrates",         "group": "Western Wisdom",  "primary": ["Life & Character", "Intuition & Inner-Self"], "secondary": ["Strategy & Competition"], "tagline": "Question everything; the examined life." },
+    { "slug": "aristotle",        "name": "Aristotle",        "group": "Western Wisdom",  "primary": ["Life & Character", "Purpose & Longevity"], "secondary": ["Business & Leadership"], "tagline": "Virtue as the mean; excellence is a habit." },
+    { "slug": "plato",            "name": "Plato",            "group": "Western Wisdom",  "primary": ["Life & Character", "Purpose & Longevity", "Intuition & Inner-Self"], "secondary": [], "tagline": "Pursue the ideal Forms behind the shadows." },
+    { "slug": "jim-rohn",         "name": "Jim Rohn",         "group": "Business",        "primary": ["Business & Leadership", "Life & Character"], "secondary": ["Purpose & Longevity"], "tagline": "You are the average of your disciplines." },
+    { "slug": "elon-musk",        "name": "Elon Musk",        "group": "Business",        "primary": ["Business & Leadership", "Strategy & Competition"], "secondary": ["Purpose & Longevity"], "tagline": "Reason from first principles; bias to action." },
+    { "slug": "steve-jobs",       "name": "Steve Jobs",       "group": "Business",        "primary": ["Business & Leadership", "Life & Character"], "secondary": ["Intuition & Inner-Self"], "tagline": "Focus, taste, and the courage to say no." },
+    { "slug": "dario-amodei",     "name": "Dario Amodei",     "group": "Business",        "primary": ["Business & Leadership", "Purpose & Longevity"], "secondary": ["Strategy & Competition"], "tagline": "Build powerfully, steer responsibly." },
+    { "slug": "henry-ford",       "name": "Henry Ford",       "group": "Business",        "primary": ["Business & Leadership", "Financial & Investing"], "secondary": ["Strategy & Competition"], "tagline": "Systematize; serve the many, not the few." },
+    { "slug": "simon-sinek",      "name": "Simon Sinek",      "group": "Business",        "primary": ["Business & Leadership", "Purpose & Longevity"], "secondary": ["Intuition & Inner-Self", "Life & Character"], "tagline": "Start with Why; leaders make people feel safe." },
+    { "slug": "carl-jung",        "name": "Carl Jung",        "group": "Intuition",       "primary": ["Intuition & Inner-Self", "Life & Character"], "secondary": ["Purpose & Longevity"], "tagline": "Make the unconscious conscious; integrate the shadow." },
+    { "slug": "gautama-buddha",   "name": "Gautama Buddha",   "group": "Intuition",       "primary": ["Life & Character", "Intuition & Inner-Self", "Purpose & Longevity"], "secondary": [], "tagline": "End suffering by seeing clearly; the Middle Way." },
+    { "slug": "warren-buffett",   "name": "Warren Buffett",   "group": "Financial",       "primary": ["Financial & Investing", "Business & Leadership"], "secondary": ["Life & Character"], "tagline": "Buy wonderful businesses; circle of competence." },
+    { "slug": "ray-dalio",        "name": "Ray Dalio",        "group": "Financial",       "primary": ["Financial & Investing", "Strategy & Competition"], "secondary": ["Life & Character"], "tagline": "Principles, radical truth, and the machine." },
+    { "slug": "benjamin-graham",  "name": "Benjamin Graham",  "group": "Financial",       "primary": ["Financial & Investing"], "secondary": ["Life & Character"], "tagline": "Margin of safety; Mr. Market is your servant." },
+    { "slug": "peter-lynch",      "name": "Peter Lynch",      "group": "Financial",       "primary": ["Financial & Investing", "Business & Leadership"], "secondary": [], "tagline": "Invest in what you understand; do the work." },
+    { "slug": "charlie-munger",   "name": "Charlie Munger",   "group": "Financial",       "primary": ["Financial & Investing", "Strategy & Competition", "Life & Character"], "secondary": [], "tagline": "Latticework of mental models; invert, always invert." },
+    { "slug": "chris-yeh",        "name": "Chris Yeh",        "group": "Financial",       "primary": ["Business & Leadership", "Financial & Investing", "Strategy & Competition"], "secondary": [], "tagline": "Blitzscaling: prioritize speed over efficiency to win markets." }
+  ]
+}

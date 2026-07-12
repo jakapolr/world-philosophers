@@ -1,0 +1,19 @@
+{
+  "name": "world-philosophers",
+  "version": "0.1.0",
+  "description": "Personal Mentorship from world-leading philosophers, strategists, founders and investors across Eastern and Western traditions. Routes your question to the best-suited mentors, convenes a council for a holistic view, and always hands the choice back to you. Reflection, never fortune-telling.",
+  "author": {
+    "name": "Jack"
+  },
+  "homepage": "https://github.com/",
+  "keywords": [
+    "mentorship",
+    "philosophy",
+    "wisdom",
+    "stoicism",
+    "strategy",
+    "investing",
+    "reflection",
+    "decision-making"
+  ]
+}
