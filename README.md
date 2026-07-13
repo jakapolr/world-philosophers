@@ -28,6 +28,16 @@ Each mentor is recorded with biography, successes, **failures & blind spots**, a
 Strategy & Competition · Financial & Investing · Intuition & Inner-Self · Purpose &
 Longevity.
 
+## Install
+In Claude Code:
+```
+/plugin marketplace add jakapolr/world-philosophers
+/plugin install world-philosophers@world-philosophers
+```
+Then `/reload-plugins` (or restart Claude Code). Scriptable equivalent:
+`claude plugin marketplace add jakapolr/world-philosophers && claude plugin install world-philosophers@world-philosophers --scope user`.
+For local development: `claude --plugin-dir "/path/to/world-philosophers"`.
+
 ## Usage
 - `/build-goals` — **start here.** Discover your Ultimate Life Goals through a guided
   reflection with the philosophers; it writes them to `config/user-profile.md` so every
