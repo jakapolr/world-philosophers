@@ -5,7 +5,9 @@
   "author": {
     "name": "Jack"
   },
-  "homepage": "https://github.com/",
+  "homepage": "https://github.com/jakapolr/world-philosophers",
+  "repository": "https://github.com/jakapolr/world-philosophers",
+  "license": "MIT",
   "keywords": [
     "mentorship",
     "philosophy",

@@ -1,0 +1,15 @@
+{
+  "name": "world-philosophers",
+  "owner": {
+    "name": "Jack",
+    "email": "abelinze@gmail.com"
+  },
+  "description": "Personal mentorship from world-leading philosophers, strategists, founders, and investors — Eastern and Western.",
+  "plugins": [
+    {
+      "name": "world-philosophers",
+      "source": "./",
+      "description": "Routes your question to the best-suited mentors, convenes a council that shows where they disagree, and hands the choice back to you. Reflection, never fortune-telling; coaching, not therapy."
+    }
+  ]
+}
