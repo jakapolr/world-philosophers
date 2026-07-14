@@ -153,6 +153,16 @@ PAGE = '''<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{name} — World Philosophers</title>
 <meta name="description" content="{desc}" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="World Philosophers" />
+<meta property="og:title" content="{name} — World Philosophers" />
+<meta property="og:description" content="{desc}" />
+<meta property="og:url" content="https://world-philosophers.pages.dev/philosophers/{slug}.html" />
+<meta property="og:image" content="https://world-philosophers.pages.dev/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://world-philosophers.pages.dev/assets/og-image.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -239,7 +249,7 @@ def build(slug):
           f'<img class="portrait-img" src="../assets/img/{slug}.jpg" alt="{html.escape(name)}" onerror="this.remove()"/>'
 
     page = PAGE.format(
-        name=html.escape(name),
+        name=html.escape(name), slug=slug,
         desc=html.escape(fm.get("tagline", name)),
         group=html.escape(group), era=html.escape(era),
         chips=chips, tagline=inline(fm.get("tagline", "")),
