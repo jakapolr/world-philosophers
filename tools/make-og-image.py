@@ -59,7 +59,7 @@ center("World Philosophers", serif_b(92), 205, (243, 236, 224))
 d.line([(W // 2 - 60, 330), (W // 2 + 60, 330)], fill=(232, 185, 106), width=2)
 center("A council of 23 mentors  ·  Eastern & Western", serif(34), 356, (203, 196, 182))
 center("“Reflection, never fortune-telling.”", serif_i(32), 418, (232, 185, 106))
-center("world-philosophers.pages.dev", serif(22), 545, (139, 133, 120))
+center("world-philosophers.org", serif(22), 545, (139, 133, 120))
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 base.save(OUT, "PNG", optimize=True)
